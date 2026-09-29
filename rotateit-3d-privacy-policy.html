@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for RotateIt 3D by Xetriva. Learn how RotateIt 3D handles photos, camera access, AI styling, advertising, subscriptions, and third-party services.">
+  <meta name="robots" content="index, follow">
+  <title>RotateIt 3D — Privacy Policy | Xetriva</title>
+  <style>
+    :root {
+      --bg: #08080c;
+      --surface: #101017;
+      --surface-2: #15151e;
+      --border: rgba(255,255,255,.09);
+      --text: #f7f7fb;
+      --muted: #a7a7b5;
+      --accent: #8b5cf6;
+      --accent-2: #4f46e5;
+      --max: 920px;
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(124,58,237,.16), transparent 32rem),
+        radial-gradient(circle at 90% 10%, rgba(79,70,229,.13), transparent 30rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: #bba7ff;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 76px 0 42px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 26px;
+      color: var(--text);
+      font-weight: 800;
+      letter-spacing: -.02em;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 10px 35px rgba(124,58,237,.28);
+      font-size: 15px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.3rem, 6vw, 4.5rem);
+      line-height: 1.03;
+      letter-spacing: -.055em;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .pill {
+      padding: 8px 13px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255,255,255,.035);
+      color: #c9c9d4;
+      font-size: .88rem;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 42px;
+      padding: 44px 0 72px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: rgba(16,16,23,.72);
+      backdrop-filter: blur(16px);
+    }
+
+    .toc-title {
+      margin-bottom: 12px;
+      color: #fff;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .toc a {
+      display: block;
+      padding: 6px 0;
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.45;
+    }
+
+    .toc a:hover { color: #fff; }
+
+    main {
+      min-width: 0;
+    }
+
+    .notice {
+      margin-bottom: 30px;
+      padding: 20px 22px;
+      border: 1px solid rgba(139,92,246,.28);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(139,92,246,.12), rgba(79,70,229,.05));
+    }
+
+    .notice strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    section {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-child { border-bottom: 0; }
+
+    h2 {
+      margin: 0 0 13px;
+      font-size: 1.45rem;
+      line-height: 1.25;
+      letter-spacing: -.025em;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: #c2c2cd;
+    }
+
+    ul {
+      margin: 10px 0 16px;
+      padding-left: 22px;
+      color: #c2c2cd;
+    }
+
+    li { margin: 6px 0; }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .service {
+      padding: 17px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface);
+    }
+
+    .service strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+
+    .service span {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .contact {
+      margin-top: 16px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--surface-2);
+    }
+
+    footer {
+      padding: 30px 0 48px;
+      border-top: 1px solid var(--border);
+      color: #858593;
+      font-size: .88rem;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 760px) {
+      header { padding: 52px 0 34px; }
+
+      .layout {
+        display: block;
+        padding-top: 28px;
+      }
+
+      .toc {
+        position: static;
+        margin-bottom: 26px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 { font-size: 2.65rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a class="brand" href="https://xetriva.com" aria-label="Xetriva home">
+        <span class="brand-mark">X</span>
+        <span>Xetriva</span>
+      </a>
+
+      <h1>RotateIt 3D<br>Privacy Policy</h1>
+
+      <p class="lead">
+        This Privacy Policy explains how RotateIt 3D handles information when you use
+        the app to create, edit, style, and export 3D photo compositions.
+      </p>
+
+      <div class="meta">
+        <span class="pill">Effective: September 29, 2026</span>
+        <span class="pill">App: RotateIt 3D</span>
+        <span class="pill">Package: com.xetriva.rotateit3d.app.play</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container layout">
+    <aside class="toc" aria-label="Table of contents">
+      <div class="toc-title">Contents</div>
+      <a href="#information">1. Information We Access</a>
+      <a href="#photos">2. Photo Processing</a>
+      <a href="#ai">3. AI Stylist</a>
+      <a href="#ads">4. Advertising</a>
+      <a href="#purchases">5. Purchases</a>
+      <a href="#revenuecat">6. RevenueCat</a>
+      <a href="#storage">7. Local Storage</a>
+      <a href="#sharing">8. Data Sharing</a>
+      <a href="#security">9. Security</a>
+      <a href="#children">10. Children's Privacy</a>
+      <a href="#choices">11. Your Choices</a>
+      <a href="#third-party">12. Third-Party Services</a>
+      <a href="#changes">13. Changes</a>
+      <a href="#contact">14. Contact</a>
+    </aside>
+
+    <main>
+      <div class="notice">
+        <strong>Privacy-first photo editing</strong>
+        RotateIt 3D is designed to process your photos on your device.
+        We do not operate a server that stores your imported, edited, or exported photos.
+      </div>
+
+      <section id="information">
+        <h2>1. Information We Access</h2>
+
+        <h3>Photos and Images</h3>
+        <p>
+          RotateIt 3D allows you to select photos from your device using Android's
+          photo selection functionality. Selected photos are processed locally on
+          your device for editing, cropping, rotation, 3D transformation, effects,
+          and export.
+        </p>
+
+        <h3>Camera</h3>
+        <p>
+          If you choose to capture a photo using the in-app camera, RotateIt 3D
+          requests camera access. Camera access is used to capture images that you
+          choose to edit. We do not continuously access or record your camera.
+        </p>
+
+        <h3>Device and Technical Information</h3>
+        <p>
+          Third-party services used by the app may process technical information
+          needed to provide their services. Depending on the service, device,
+          consent choices, and configuration, this may include device type,
+          operating system version, app version, IP address, approximate location
+          derived from IP address, advertising identifiers, and diagnostic or
+          interaction information.
+        </p>
+      </section>
+
+      <section id="photos">
+        <h2>2. How Your Photos Are Processed</h2>
+        <p>
+          RotateIt 3D is designed to process photos on your device. Editing
+          operations such as 3D rotation, perspective transformation, cropping,
+          scaling, flipping, shadows, backgrounds, borders, glare effects, and
+          image export are performed locally on your Android device.
+        </p>
+        <p>
+          We do not operate a server that stores your edited or imported photos.
+          Exported images remain under your control and are saved to the location
+          you select on your device.
+        </p>
+      </section>
+
+      <section id="ai">
+        <h2>3. AI 3D Scene Stylist</h2>
+        <p>
+          RotateIt 3D includes an optional AI-assisted feature called AI 3D Scene
+          Stylist. It can use a text prompt to suggest rotation angles, scale,
+          shadow settings, background colors, and other 3D scene settings.
+        </p>
+        <p>
+          When you use the AI Stylist, the text prompt required to generate a
+          styling suggestion may be sent to Google's Gemini services for processing.
+          The selected photo itself is not sent to Gemini for photo editing or
+          image generation by RotateIt 3D.
+        </p>
+        <p>
+          Please do not include sensitive personal information in AI prompts.
+          Google's applicable terms and privacy practices may also apply to your
+          use of Gemini services.
+        </p>
+      </section>
+
+      <section id="ads">
+        <h2>4. Advertising</h2>
+        <p>
+          RotateIt 3D uses Google AdMob to display advertisements, including
+          rewarded advertisements that may provide additional in-app credits after
+          an eligible ad is completed.
+        </p>
+        <p>
+          Depending on your device settings, consent choices, applicable laws, and
+          Google's advertising configuration, AdMob may process information such as
+          advertising identifiers, device information, IP address, app information,
+          approximate location, and advertising or interaction information.
+        </p>
+        <p>
+          You can manage certain advertising and privacy settings through your
+          Android device and Google account settings.
+        </p>
+      </section>
+
+      <section id="purchases">
+        <h2>5. Subscriptions and In-App Purchases</h2>
+        <p>
+          RotateIt 3D offers an optional VIP subscription that may provide benefits
+          such as removal of advertisements and unlimited exports.
+        </p>
+        <p>
+          Purchases are processed through Google Play, while subscription entitlement
+          management may be handled through RevenueCat. RotateIt 3D does not receive
+          or store your full payment card, bank account, or other payment credentials.
+        </p>
+        <p>
+          Google Play and RevenueCat may process information necessary to process
+          purchases, verify transactions, manage subscriptions, restore purchases,
+          determine entitlement, and help prevent fraudulent transactions.
+        </p>
+      </section>
+
+      <section id="revenuecat">
+        <h2>6. RevenueCat</h2>
+        <p>
+          We use RevenueCat to help manage subscription status and entitlement
+          information. RevenueCat may process information such as app user
+          identifiers, purchase information, subscription status, product
+          information, transaction information, and technical information required
+          to provide its services.
+        </p>
+        <p>
+          RevenueCat does not receive your payment card details directly from
+          RotateIt 3D.
+        </p>
+      </section>
+
+      <section id="storage">
+        <h2>7. Data Storage on Your Device</h2>
+        <p>
+          RotateIt 3D may store certain application preferences, editing state,
+          drafts, quota information, export preferences, and other app-related
+          settings locally on your device.
+        </p>
+        <p>
+          Local storage may support features such as auto-saved drafts, editing
+          preferences, export preferences, free-generation and credit information,
+          and application settings.
+        </p>
+        <p>
+          This information is primarily stored locally on your device and is not
+          intentionally transmitted to our own servers.
+        </p>
+      </section>
+
+      <section id="sharing">
+        <h2>8. Data Sharing</h2>
+        <p>
+          We do not sell your personal information and we do not share your photos
+          with advertisers.
+        </p>
+        <p>
+          Information may be processed by third-party service providers when
+          required to provide specific application functionality, including:
+        </p>
+
+        <div class="service-grid">
+          <div class="service">
+            <strong>Google AdMob</strong>
+            <span>Advertising and ad measurement.</span>
+          </div>
+          <div class="service">
+            <strong>Google Gemini</strong>
+            <span>Optional AI-assisted styling from text prompts.</span>
+          </div>
+          <div class="service">
+            <strong>Google Play</strong>
+            <span>Application distribution and purchases.</span>
+          </div>
+          <div class="service">
+            <strong>RevenueCat</strong>
+            <span>Subscription and entitlement management.</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="security">
+        <h2>9. Data Security and Retention</h2>
+        <p>
+          We take reasonable measures to protect information processed through the
+          application. Because RotateIt 3D processes photos locally whenever
+          possible, your photo files are not stored on our servers.
+        </p>
+        <p>
+          No method of electronic storage or transmission can be guaranteed to be
+          completely secure.
+        </p>
+        <p>
+          We do not maintain a server-side database containing your personal photos
+          or exported images. Information processed by third-party providers may be
+          retained according to their respective policies and practices.
+        </p>
+        <p>
+          Local application data remains on your device until it is deleted by you,
+          the application is uninstalled, or the relevant data is otherwise removed
+          through your device's settings.
+        </p>
+      </section>
+
+      <section id="children">
+        <h2>10. Children's Privacy</h2>
+        <p>
+          RotateIt 3D is not specifically directed toward children. We do not
+          knowingly collect personal information from children through our own
+          servers.
+        </p>
+        <p>
+          If you believe that a child has provided personal information to us,
+          please contact us so that we can review the situation and take
+          appropriate action where applicable.
+        </p>
+      </section>
+
+      <section id="choices">
+        <h2>11. Your Choices</h2>
+        <p>You can control your use of the app's permissions through Android settings.</p>
+        <ul>
+          <li>Grant or deny camera permission.</li>
+          <li>Control photo access.</li>
+          <li>Manage available advertising personalization settings.</li>
+          <li>Cancel your subscription through Google Play.</li>
+          <li>Uninstall the application.</li>
+          <li>Delete locally stored application data through Android settings.</li>
+        </ul>
+        <p>
+          Some functionality may not work if the required permission is denied.
+        </p>
+      </section>
+
+      <section id="third-party">
+        <h2>12. Third-Party Services</h2>
+        <p>
+          RotateIt 3D uses or may use third-party services including Google AdMob,
+          Google Gemini, Google Play, and RevenueCat.
+        </p>
+        <p>
+          These services may collect or process information according to their own
+          applicable privacy policies and terms. We encourage you to review the
+          privacy practices of these providers.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>13. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect changes
+          to the application, our services, legal requirements, or third-party
+          integrations.
+        </p>
+        <p>
+          When we make changes, we will update the Effective Date at the top of
+          this Privacy Policy. You should periodically review this page for the
+          latest information.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>14. Contact Us</h2>
+        <p>
+          If you have questions, concerns, or requests regarding this Privacy
+          Policy or RotateIt 3D's privacy practices, please contact us.
+        </p>
+
+        <div class="contact">
+          <p><strong>Email:</strong> <a href="mailto:support@xetriva.com">support@xetriva.com</a></p>
+          <p><strong>General Contact:</strong> <a href="mailto:info@xetriva.com">info@xetriva.com</a></p>
+          <p><strong>Website:</strong> <a href="https://xetriva.com" target="_blank" rel="noopener noreferrer">xetriva.com</a></p>
+          <p><strong>Application:</strong> RotateIt 3D</p>
+          <p><strong>Package Name:</strong> com.xetriva.rotateit3d.app.play</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© 2026 Xetriva. All rights reserved.</span>
+      <a href="https://xetriva.com" target="_blank" rel="noopener noreferrer">xetriva.com</a>
+    </div>
+  </footer>
+</body>
+</html>
